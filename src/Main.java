@@ -61,8 +61,7 @@ public class Main {
             System.out.printf("Já a média das temperaturas convertidas é igual à %.2fº" + unidadeDeMedidaConvertida + "\n", mediaTemperaturasConvertidas);
 
         } catch (InputMismatchException erroInput) {
-            System.out.println("!!! Operação inválida !!!" + erroInput.getMessage());
-            return;
+            System.out.println("[OPERAÇÃO INVÁLIDA] " + erroInput.getMessage() + " !");
         }
 
         apresentaQuebraDeLinha();
